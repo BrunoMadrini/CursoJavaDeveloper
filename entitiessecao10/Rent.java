@@ -1,15 +1,13 @@
 package entitiessecao10;
 
-public class Rooms {
+public class Rent {
 
 	private String name;
 	private String email;
-	private int room;
-	
-	public Rooms(String name, String email, int room) {
+
+	public Rent(String name, String email) {
 		this.name = name;
 		this.email = email;
-		this.room = room;
 	}
 
 	public String getName() {
@@ -27,13 +25,8 @@ public class Rooms {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	public int getRoom() {
-		return room;
+	
+	public String toString() {
+		return name + ", " + email;
 	}
-
-	public void setRoom(int room) {
-		this.room = room;
-	}
-		
 }
